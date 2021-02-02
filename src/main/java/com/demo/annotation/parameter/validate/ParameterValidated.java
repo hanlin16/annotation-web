@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  *  验证注解
- * @Date:2020/2/1 21:21
  */
 public class ParameterValidated implements ConstraintValidator<Check, Object> {
     /**
