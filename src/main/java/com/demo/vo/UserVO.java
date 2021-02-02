@@ -5,21 +5,17 @@ import lombok.Data;
 
 /**
  *  用户实体
- *
- *
- * @Date:2020/2/1 21:33
- *
  */
 @Data
-public class User {
+public class UserVO {
     /**
      * 姓名
      * */
     private String name;
 
     /**
-     * 性别 man or women
+     * 性别 male、female
      * */
-    @Check(paramValues = {"man", "woman"})
-    private String sex;
+    @Check(paramValues = {"male", "female"})
+    private String gender;
 }
