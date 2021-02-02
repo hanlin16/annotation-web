@@ -2,7 +2,6 @@ package com.demo.annotation.parameter;
 
 
 import com.demo.annotation.parameter.validate.CheckNotBlankValidated;
-import com.demo.annotation.parameter.validate.CheckValuesValidated;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
