@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebCtr {
 
     //测试自定义注解实现参数校验
-    @PostMapping("/api/test")
+    @PostMapping("/api/user/add")
     public UserVO test(@Validated @RequestBody UserVO userVO) {
         return userVO;
     }
 
     //测试自定义注解实现权限拦截
     @GetMapping("/api/permission")
-    @PermissionCheck(resourceKey = "test")
+    @PermissionCheck(resourceKey = "testKey")
     public String testPermissionCheck() {
         return "success";
     }
